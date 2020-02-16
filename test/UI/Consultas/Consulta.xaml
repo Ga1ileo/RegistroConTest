@@ -1,0 +1,22 @@
+﻿<Window x:Class="test.UI.Consultas.Consulta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test.UI.Consultas"
+        mc:Ignorable="d"
+        Title="Consulta" Height="450" Width="800">
+    <Grid>
+        <Label Content="Desde" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hasta" HorizontalAlignment="Left" Margin="147,22,0,0" VerticalAlignment="Top"/>
+        <Label Content="Filtro" HorizontalAlignment="Left" Margin="253,22,0,0" VerticalAlignment="Top"/>
+        <Label Content="Criterio" HorizontalAlignment="Left" Margin="360,22,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="DesdeDatePicker" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="129"/>
+        <DatePicker x:Name="HastaDatePicker" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top" Width="101"/>
+        <ComboBox x:Name="FiltroComboBox" HorizontalAlignment="Left" Margin="253,55,0,0" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="CriterioTextBox" HorizontalAlignment="Left" Margin="373,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335"/>
+        <Button x:Name="ConsultarButton" Content="Consultar" HorizontalAlignment="Left" Margin="723,54,0,0" VerticalAlignment="Top" Click="ConsultarButton_Click"/>
+        <DataGrid x:Name="ConsultaDataGrid" Margin="0,82,0,0"/>
+
+    </Grid>
+</Window>
