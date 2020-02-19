@@ -13,7 +13,7 @@ namespace test.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = .\SqlExpress; Database = TestDb; Trusted_Connection = True;");
+            optionsBuilder.UseSqlite(@"Data Source= Persona.db");
         }
     }
 }
